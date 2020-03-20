@@ -1,0 +1,248 @@
+* {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form-block {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  min-width: 350px;
+  min-height: 460px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: solid 1px #c7c7c7;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 10px;
+}
+
+.progress-bar {
+  margin: 0 -21px;
+  margin-bottom: 30px;
+}
+
+.progress-bar .title {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #64a8e9;
+  font-size: 1.4em;
+}
+
+.progress-bar .bar {
+  display: flex;
+  margin-bottom: 15px;
+  border: solid 1px #c7c7c7;
+}
+
+.progress-bar .bar div{
+  flex: 1;
+  height: 10px;
+}
+
+.bar.page-1 .first{
+  background-color: #4a90e2;
+}
+
+.bar.page-2 .first, .bar.page-2 .second{
+  background-color: #4a90e2;
+}
+
+.bar.page-3 .first, .bar.page-3 .second, .bar.page-3 .third{
+  background-color: #4a90e2;
+}
+
+.form-element {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-element label {
+  text-transform: uppercase;
+  text-align: left;
+}
+
+label.error {
+  color: #eb6b6b;
+}
+
+.form-element input {
+  border: none;
+  border-bottom: solid 1px #c7c7c7;
+  margin: 10px 0;
+  padding: 5px;
+  margin-bottom: 20px;
+  font-size: 1em;
+}
+
+.form-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 -20px;
+  margin-top: 10px;
+  padding: 0 20px;
+  padding-top: 20px;
+  border-top: solid 1px #c7c7c7;
+}
+
+.form-footer .next {
+  border: none;
+  background-color: inherit;
+  color: #64a8e9;
+  font-size: 1.2em;
+}
+
+.form-footer .back {
+  border: none;
+  background-color: inherit;
+  color: #ddd;
+  font-size: 1.2em;
+}
+
+.dashboard-btn {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-btn button {
+  border: solid 1px #64a8e9;
+  background-color: inherit;
+  border-radius: 5px;
+  color: #64a8e9;
+  font-size: 1.3em;
+  padding: 10px;
+}
+
+button {
+  transition: all 200ms!important;
+}
+
+button:hover{
+  color: #7db5e9!important;
+  background-color: #fafcff!important;
+  transition: all 200ms!important;
+}
+
+button:active{
+  color: #429ef3!important;
+}
+
+.check-symbol {
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 50%;
+  background-color: #93fb93;
+  width: 12em;
+  height: 12em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-symbol span{
+  font-size: 6em;
+  color: #fff;
+}
+
+.date-row-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.date-row {
+  flex: 1;
+  justify-content: center;
+  border: solid 1px #ddd;
+}
+
+.date-row input{
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  border: none;
+  color: #888;
+  font-size: 1.1em;
+}
+
+.date-row:first-child input, .genders label:first-child{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.date-row:last-child input, .genders label:last-child{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.title-middle {
+  text-transform: uppercase;
+  text-align: center!important;
+}
+
+.genders {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.genders label{
+  flex: 1;
+  border: solid 1px #ddd;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio]:checked + .box {
+  background-color: #64a8e9;
+}
+
+input[type=radio]:checked + .box div {
+  color: white;
+}
+
+.box {
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.box div {
+  height: 100%;
+  transition: all 300ms ease;
+  user-select: none;
+  color: #444;
+  padding-top: 8px;
+}
+
+select {
+  margin-top: 15px;
+  height: 40px;
+}
